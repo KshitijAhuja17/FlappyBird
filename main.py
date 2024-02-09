@@ -182,7 +182,6 @@ def getRandomPipe():
 if __name__ == "__main__":
     pygame.init() # Initialize all pygame's modules
     FPSCLOCK = pygame.time.Clock()
-    pygame.display.set_caption('Flappy Bird by CodeWithHarry')
     GAME_SPRITES['numbers'] = ( 
         pygame.image.load('gallery/sprites/0.png').convert_alpha(),
         pygame.image.load('gallery/sprites/1.png').convert_alpha(),
@@ -196,7 +195,7 @@ if __name__ == "__main__":
         pygame.image.load('gallery/sprites/9.png').convert_alpha(),
     )
 
-    GAME_SPRITES['message'] =pygame.image.load('gallery/sprites/message.png').convert_alpha()
+    GAME_SPRITES['message'] =pygame.image.load('gallery/sprites/baseimg2.png').convert_alpha()
     GAME_SPRITES['base'] =pygame.image.load('gallery/sprites/base.png').convert_alpha()
     GAME_SPRITES['pipe'] =(pygame.transform.rotate(pygame.image.load( PIPE).convert_alpha(), 180), 
     pygame.image.load(PIPE).convert_alpha()
